@@ -1,0 +1,9 @@
+metric,baseline_value,notes
+Total assessed modules,12,"Based on repository feature and route analysis"
+High-risk modules,5,"Authentication, cart, checkout, orders, catalog"
+Medium-risk modules,5,"Product detail, profile/address, search/filter, contracts, admin"
+Low-risk modules,2,"Notifications and observability"
+Assignment 1 automated QA tests added,3,"2 UI smoke tests and 1 optional API smoke"
+Existing automated test files already present,6,"Backend Go tests in auth, cart, product plus shared test utilities"
+Estimated Assignment 1 effort,12-16 hours,"Analysis, setup, docs, verification"
+

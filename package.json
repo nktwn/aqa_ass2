@@ -1,0 +1,17 @@
+{
+  "name": "aqa-assignment1",
+  "private": true,
+  "scripts": {
+    "qa:test": "playwright test",
+    "qa:test:e2e": "playwright test tests/e2e",
+    "qa:test:api": "playwright test tests/api",
+    "qa:test:smoke": "playwright test --grep @smoke",
+    "qa:report": "playwright show-report",
+    "qa:install:browsers": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "dotenv": "^16.5.0"
+  }
+}
+
