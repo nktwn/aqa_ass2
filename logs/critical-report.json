@@ -1,0 +1,870 @@
+{
+  "config": {
+    "configFile": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/playwright.config.ts",
+    "rootDir": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 4,
+    "webServer": {
+      "command": "npm --prefix frontend run dev -- --hostname 127.0.0.1",
+      "url": "http://127.0.0.1:3000",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "api/auth/auth.live.spec.ts",
+      "file": "api/auth/auth.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API authentication",
+          "file": "api/auth/auth.live.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "invalid login returns 401 @api @critical @auth",
+              "ok": true,
+              "tags": [
+                "api",
+                "critical",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/auth/auth.live.spec.ts",
+                        "line": 10,
+                        "column": 8
+                      }
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Set QA_API_LOGIN_PHONE and QA_API_LOGIN_PASSWORD for positive live auth coverage.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/auth/auth.live.spec.ts",
+                        "line": 23,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.348Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/auth/auth.live.spec.ts",
+                            "line": 10,
+                            "column": 8
+                          }
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Set QA_API_LOGIN_PHONE and QA_API_LOGIN_PASSWORD for positive live auth coverage.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/auth/auth.live.spec.ts",
+                            "line": 23,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f2e19db1574dd82efefb-0acd0e8e58aa0357e9cf",
+              "file": "api/auth/auth.live.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/cart/cart.live.spec.ts",
+      "file": "api/cart/cart.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API cart",
+          "file": "api/cart/cart.live.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "unauthorized cart access is rejected @api @critical @cart",
+              "ok": true,
+              "tags": [
+                "api",
+                "critical",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/cart/cart.live.spec.ts",
+                        "line": 5,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.348Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/cart/cart.live.spec.ts",
+                            "line": 5,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "b9a4ce32db611ece1278-0ab38388840feebaf260",
+              "file": "api/cart/cart.live.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/catalog/catalog.live.spec.ts",
+      "file": "api/catalog/catalog.live.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Live API catalog",
+          "file": "api/catalog/catalog.live.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "product list endpoint returns catalog payload @api @critical @catalog",
+              "ok": true,
+              "tags": [
+                "api",
+                "critical",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                      "location": {
+                        "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/catalog/catalog.live.spec.ts",
+                        "line": 5,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.348Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Set QA_RUN_API_TESTS=true when backend services are running.",
+                          "location": {
+                            "file": "/Users/sergazieff.n/VSCodeProjects/aqa_ass2/tests/api/catalog/catalog.live.spec.ts",
+                            "line": 5,
+                            "column": 8
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a554a5a849ab16a884c5-162a8173a99fc949a51e",
+              "file": "api/catalog/catalog.live.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/auth/authorization.critical.spec.ts",
+      "file": "e2e/auth/authorization.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authorization",
+          "file": "e2e/auth/authorization.critical.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "unauthorized user is redirected from protected cart route @critical @smoke @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3194,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.726Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a287ec7a2defdf40464f-57dc7aff695dc2b6cf66",
+              "file": "e2e/auth/authorization.critical.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "customer is redirected away from admin route @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3731,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.722Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a287ec7a2defdf40464f-23226047ab29dcd93e85",
+              "file": "e2e/auth/authorization.critical.spec.ts",
+              "line": 17,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/auth/login.critical.spec.ts",
+      "file": "e2e/auth/login.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication",
+          "file": "e2e/auth/login.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "valid user can log in and reach the storefront @critical @smoke @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3810,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.721Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5e3329a8ba52e621f317-d7510b7690d8a023d98d",
+              "file": "e2e/auth/login.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "invalid credentials are rejected with an error message @critical @regression @auth",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "auth"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3350,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:24.724Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5e3329a8ba52e621f317-0ae4e82ce96b0d3ff074",
+              "file": "e2e/auth/login.critical.spec.ts",
+              "line": 22,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/cart/cart.critical.spec.ts",
+      "file": "e2e/cart/cart.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart",
+          "file": "e2e/cart/cart.critical.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "authenticated user can add a product to cart from product details @critical @smoke @cart",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3395,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:28.354Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bcd48a5c00a5a936952c-7d2b9046fffefc0103eb",
+              "file": "e2e/cart/cart.critical.spec.ts",
+              "line": 8,
+              "column": 7
+            },
+            {
+              "title": "user can update quantity and clear cart @critical @regression @cart",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "cart"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2135,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:28.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bcd48a5c00a5a936952c-b924369d9ad9d9e2d373",
+              "file": "e2e/cart/cart.critical.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/catalog/catalog.critical.spec.ts",
+      "file": "e2e/catalog/catalog.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Catalog",
+          "file": "e2e/catalog/catalog.critical.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "catalog renders products and applies search filters @critical @smoke @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2141,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:28.891Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69b44a4ac87d1e01ca6d-7e2612816a5423765fce",
+              "file": "e2e/catalog/catalog.critical.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "user can open product details from the catalog @critical @regression @catalog",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "catalog"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2413,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:28.906Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "69b44a4ac87d1e01ca6d-a095847c156ab45faf60",
+              "file": "e2e/catalog/catalog.critical.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/checkout/checkout.critical.spec.ts",
+      "file": "e2e/checkout/checkout.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkout",
+          "file": "e2e/checkout/checkout.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "checkout requires a delivery address before payment link creation @critical @regression @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 983,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:30.902Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "153b5cedca35198fb425-0559437a4d4303001cc2",
+              "file": "e2e/checkout/checkout.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "user can save address and create payment link for valid cart @critical @smoke @checkout",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "checkout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1001,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:31.066Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "153b5cedca35198fb425-b9f24be23a4a14423378",
+              "file": "e2e/checkout/checkout.critical.spec.ts",
+              "line": 23,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "e2e/orders/orders.critical.spec.ts",
+      "file": "e2e/orders/orders.critical.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Orders",
+          "file": "e2e/orders/orders.critical.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "orders page shows created order details and supports cancellation @critical @smoke @orders",
+              "ok": true,
+              "tags": [
+                "critical",
+                "smoke",
+                "orders"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1200,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:31.350Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cece3e00c8a1b963ac6a-c4196010aa6024f5f597",
+              "file": "e2e/orders/orders.critical.spec.ts",
+              "line": 7,
+              "column": 7
+            },
+            {
+              "title": "unauthorized user is redirected from orders page @critical @regression @orders",
+              "ok": true,
+              "tags": [
+                "critical",
+                "regression",
+                "orders"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 755,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-10T11:10:31.834Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "cece3e00c8a1b963ac6a-c928b55d0e4bf40cd52f",
+              "file": "e2e/orders/orders.critical.spec.ts",
+              "line": 26,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-10T11:10:24.214Z",
+    "duration": 8440.321,
+    "expected": 12,
+    "skipped": 3,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -15,4 +15,6 @@ export const qaApiBaseUrl = trimTrailingSlash(
 export const qaApiHealthPath = process.env.QA_API_HEALTH_PATH || "/metrics";
 
 export const shouldRunApiSmoke = process.env.QA_RUN_API_SMOKE === "true";
-
+export const shouldRunLiveApiTests = process.env.QA_RUN_API_TESTS === "true";
+export const qaApiLoginPhoneNumber = process.env.QA_API_LOGIN_PHONE || "";
+export const qaApiLoginPassword = process.env.QA_API_LOGIN_PASSWORD || "";

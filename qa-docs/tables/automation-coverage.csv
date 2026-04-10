@@ -1,0 +1,6 @@
+"module_feature","high_risk_function","automated","coverage_percent","notes"
+"Authentication and authorization","Login, protected route, admin access","Yes","95","Coverage percentage is derived from implemented Assignment 2 scope"
+"Product catalog and listing","Catalog render, search, product detail entry","Yes","85","Coverage percentage is derived from implemented Assignment 2 scope"
+"Cart management","Add, update, clear cart","Yes","90","Coverage percentage is derived from implemented Assignment 2 scope"
+"Checkout and payment initiation","Address validation and payment-link creation","Yes","80","Coverage percentage is derived from implemented Assignment 2 scope"
+"Order lifecycle","Order visibility and cancellation path","Yes","75","Coverage percentage is derived from implemented Assignment 2 scope"

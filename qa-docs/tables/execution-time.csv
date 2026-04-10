@@ -1,0 +1,6 @@
+"module_feature","number_of_test_cases","execution_time_per_test_case","total_execution_time","notes"
+"Authentication and authorization","6","2.67s","16.01s","Derived from latest Playwright JSON reports"
+"Product catalog and listing","3","2.40s","7.20s","Derived from latest Playwright JSON reports"
+"Cart management","3","2.55s","7.64s","Derived from latest Playwright JSON reports"
+"Checkout and payment initiation","2","1.69s","3.39s","Derived from latest Playwright JSON reports"
+"Order lifecycle","2","1.40s","2.80s","Derived from latest Playwright JSON reports"

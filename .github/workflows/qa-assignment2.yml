@@ -1,0 +1,81 @@
+name: qa-assignment2
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  assignment2-automation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            frontend/package-lock.json
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: backend/go.mod
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Install root QA dependencies
+        run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npm run qa:install:browsers
+
+      - name: Prepare QA environment file
+        run: cp .env.qa.example .env.qa
+
+      - name: Run frontend lint
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Run backend Go tests (informational baseline)
+        continue-on-error: true
+        working-directory: backend
+        run: GOCACHE=/tmp/go-build GOMODCACHE=/tmp/go-mod go test ./...
+
+      - name: Run Assignment 2 smoke suite with JSON report
+        run: npm run qa:test:smoke:json
+
+      - name: Run Assignment 2 critical suite with JSON report
+        run: npm run qa:test:critical:json
+
+      - name: Run Assignment 2 regression suite with JSON report
+        run: npm run qa:test:regression:json
+
+      - name: Generate metrics artifacts
+        run: npm run qa:metrics
+
+      - name: Enforce Assignment 2 quality gates
+        run: npm run qa:quality-gates
+
+      - name: Upload QA Assignment 2 artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-assignment2-artifacts
+          path: |
+            playwright-report
+            test-results
+            logs
+            evidence/charts
+            qa-docs/tables
+          if-no-files-found: ignore

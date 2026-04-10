@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+      <rect width="100%" height="100%" fill="#fff7ed" />
+      <text x="40" y="32" font-size="20" font-family="Arial" fill="#0f172a">Execution time per high-risk module</text>
+      <polyline fill="none" stroke="#d97706" stroke-width="3" points="80,100 210,199.05059337913804 340,194.10368519675205 470,241.88632104934416 600,248.51967520299814" />
+      <line x1="60" y1="280" x2="720" y2="280" stroke="#fed7aa" />
+      
+        <circle cx="80" cy="100" r="5" fill="#d97706" />
+        <text x="80" y="88" font-size="12" text-anchor="middle" fill="#0f172a">16.01s</text>
+        <text x="80" y="305" font-size="12" text-anchor="middle" fill="#334155">Authentication and authorization</text>
+      
+        <circle cx="210" cy="199.05059337913804" r="5" fill="#d97706" />
+        <text x="210" y="187.05059337913804" font-size="12" text-anchor="middle" fill="#0f172a">7.20s</text>
+        <text x="210" y="305" font-size="12" text-anchor="middle" fill="#334155">Product catalog and listing</text>
+      
+        <circle cx="340" cy="194.10368519675205" r="5" fill="#d97706" />
+        <text x="340" y="182.10368519675205" font-size="12" text-anchor="middle" fill="#0f172a">7.64s</text>
+        <text x="340" y="305" font-size="12" text-anchor="middle" fill="#334155">Cart management</text>
+      
+        <circle cx="470" cy="241.88632104934416" r="5" fill="#d97706" />
+        <text x="470" y="229.88632104934416" font-size="12" text-anchor="middle" fill="#0f172a">3.39s</text>
+        <text x="470" y="305" font-size="12" text-anchor="middle" fill="#334155">Checkout and payment initiation</text>
+      
+        <circle cx="600" cy="248.51967520299814" r="5" fill="#d97706" />
+        <text x="600" y="236.51967520299814" font-size="12" text-anchor="middle" fill="#0f172a">2.80s</text>
+        <text x="600" y="305" font-size="12" text-anchor="middle" fill="#334155">Order lifecycle</text>
+      
+    </svg>

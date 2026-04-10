@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-04-10T11:45:15.629Z",
+  "suites": [
+    {
+      "key": "smoke",
+      "label": "Smoke",
+      "tests": 9,
+      "passed": 8,
+      "failed": 0,
+      "skipped": 1
+    },
+    {
+      "key": "critical",
+      "label": "Critical",
+      "tests": 15,
+      "passed": 12,
+      "failed": 0,
+      "skipped": 3
+    },
+    {
+      "key": "regression",
+      "label": "Regression",
+      "tests": 7,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 1
+    }
+  ],
+  "modules": {
+    "Cross-module": {
+      "count": 3,
+      "totalDurationMs": 2679,
+      "failed": 0
+    },
+    "Authentication and authorization": {
+      "count": 6,
+      "totalDurationMs": 16009,
+      "failed": 0
+    },
+    "Cart management": {
+      "count": 3,
+      "totalDurationMs": 7636,
+      "failed": 0
+    },
+    "Product catalog and listing": {
+      "count": 3,
+      "totalDurationMs": 7196,
+      "failed": 0
+    },
+    "Checkout and payment initiation": {
+      "count": 2,
+      "totalDurationMs": 3388,
+      "failed": 0
+    },
+    "Order lifecycle": {
+      "count": 2,
+      "totalDurationMs": 2802,
+      "failed": 0
+    }
+  }
+}

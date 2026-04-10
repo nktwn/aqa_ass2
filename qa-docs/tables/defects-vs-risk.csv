@@ -1,0 +1,6 @@
+"module_feature","high_risk_level","expected_defects","defects_found","pass_fail","notes"
+"Authentication and authorization","High","6","0","Pass","Defects counted from latest Playwright execution status"
+"Product catalog and listing","High","3","0","Pass","Defects counted from latest Playwright execution status"
+"Cart management","High","3","0","Pass","Defects counted from latest Playwright execution status"
+"Checkout and payment initiation","High","2","0","Pass","Defects counted from latest Playwright execution status"
+"Order lifecycle","High","2","0","Pass","Defects counted from latest Playwright execution status"
